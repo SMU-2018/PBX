@@ -1,0 +1,22 @@
+https://download.jitsi.org/jitsi/generic/jitsi -2.0-latest.jar
+https://wiki.asterisk.org/wiki/display/AST/Interactive+Connectivity+Establishment+%28ICE%29+in+Asterisk
+
+
+p/ conf STUN no asterisk tem que mexer em 3 arquivos
+
+1. res_stun_monitor.conf
+
+stunaddr=stun.l.google.com:19302
+
+stunrefresh = 30
+
+2. sip.conf 
+
+inserir linha icesupport=yes 
+
+3. rtp.conf 
+
+icesupport=true
+
+stunaddr=stun.l.google.com:19302
+
